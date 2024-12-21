@@ -1,0 +1,30 @@
+2024-12-21 13:55:53,578 [ERROR] Nieznany błąd
+Traceback (most recent call last):
+  File "/home/ezdies/autoclicker/screen/recognition.py", line 11, in find_element
+    raise FileNotFoundError(f"Nie można załadować ekranu z ścieżki: {screen_path}")
+FileNotFoundError: Nie można załadować ekranu z ścieżki: screen/screen.png
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ezdies/autoclicker/main.py", line 22, in main
+    task_location = find_element("templates/task_button.png", screen_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ezdies/autoclicker/screen/recognition.py", line 27, in find_element
+    raise RuntimeError(f"Błąd podczas znajdowania elementu: {e}")
+RuntimeError: Błąd podczas znajdowania elementu: Nie można załadować ekranu z ścieżki: screen/screen.png
+2024-12-21 13:58:22,558 [ERROR] Nieznany błąd
+Traceback (most recent call last):
+  File "/home/ezdies/autoclicker/screen/recognition.py", line 8, in find_element
+    raise FileNotFoundError(f"Nie znaleziono szablonu: {template_path}")
+FileNotFoundError: Nie znaleziono szablonu: templates/task_button.png
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ezdies/autoclicker/main.py", line 22, in main
+    task_location = find_element("templates/task_button.png", screen_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ezdies/autoclicker/screen/recognition.py", line 34, in find_element
+    raise RuntimeError(f"Błąd podczas znajdowania elementu: {e}")
+RuntimeError: Błąd podczas znajdowania elementu: Nie znaleziono szablonu: templates/task_button.png
